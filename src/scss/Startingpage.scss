@@ -1,0 +1,369 @@
+@use "utils" as *;
+@use "global" as *;
+
+.startingpage {
+  &.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  .mainSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(217, 217, 217);
+  }
+  .textContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 161px 0px;
+    margin: 37px 0px 238px 4.31%;
+    width: 1163.9375px;
+    max-width: 85%;
+    @include md {
+      gap: 150px 0px;
+      margin: 37px 0px 150px 4.31%;
+    }
+    @include xs {
+      gap: 80px 0px;
+      margin: 37px 0px 80px 4.31%;
+    }
+    @include tn {
+      gap: 30px 0px;
+      margin: 37px 0px 50px 4.31%;
+    }
+  }
+  .mainHeading {
+    position: relative;
+    font: 700 32px/1.2 "Georgia", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    @include md {
+      align-items: flex-start;
+      font-size: 30px;
+    }
+    @include xxs {
+      font-size: 26px;
+    }
+  }
+  .subHeading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px auto;
+    width: 974.90625px;
+    max-width: 85%;
+    font: 400 22px/2.04 "Verdana", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    @include md {
+      font-size: 20px;
+    }
+    @include xxs {
+      font-size: 18px;
+    }
+  }
+  .section2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .flex_col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 52px 0px;
+    margin: 56px auto 132px;
+    width: 972px;
+    @include md {
+      width: auto;
+    }
+  }
+  .title1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 25.41% 0px auto;
+    width: 419px;
+    font: 400 32px/1.2 "Georgia", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    @include md {
+      margin: 0px auto;
+    }
+    @include tn {
+      width: auto;
+      font-size: 28px;
+    }
+  }
+  .flex_row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 10px;
+    @include md {
+      flex-direction: column;
+      gap: 8px 10px;
+    }
+  }
+  .flex_col1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 434px;
+    min-width: 0px;
+    @include md {
+      margin-top: unset;
+      margin-bottom: unset;
+      width: auto;
+    }
+  }
+  .rect1 {
+    position: relative;
+    min-height: 271px;
+    background-color: rgb(217, 217, 217);
+    @include md {
+      min-height: 13.71%;
+    }
+  }
+  .title2 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 58px 0px 0px 15px;
+    font: 400 29px/1.2 "Georgia", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    @include md {
+      justify-content: center;
+      text-align: center;
+      font-size: 29px;
+    }
+    @include tn {
+      font-size: 24px;
+    }
+  }
+  .highlight {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px 0px 0px;
+    font: 400 18px/1.2 "Verdana", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    @include md {
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      padding: 5px 15px 5px 15px;
+      font-size: 18px;
+    }
+  }
+  .rect2 {
+    position: relative;
+    margin: 22px 3px 0px auto;
+    width: 273px;
+    min-height: 59px;
+    outline: 4px solid rgb(217, 217, 217);
+    outline-offset: -4px;
+    @include md {
+      margin: 22px auto 0px;
+    }
+  }
+  .rect11 {
+    position: relative;
+    margin: 57px 0px 0px;
+    min-height: 271px;
+    background-color: rgb(217, 217, 217);
+  }
+  .content_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    min-width: 0px;
+    min-height: 2003px;
+    @include md {
+      display: none;
+      margin-top: unset;
+      margin-bottom: unset;
+      width: 100%;
+    }
+  }
+  .rect3 {
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    bottom: 17px;
+    left: 15px;
+    width: 4px;
+    height: 1968px;
+    background-color: rgb(217, 217, 217);
+  }
+  .image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 1968px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+  }
+  .image1 {
+    position: absolute;
+    top: 328px;
+    right: 0px;
+    bottom: 1640px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+  }
+  .image2 {
+    position: absolute;
+    top: 656px;
+    right: 0px;
+    bottom: 1312px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+  }
+  .image3 {
+    position: absolute;
+    top: 984px;
+    right: 0px;
+    bottom: 984px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+  }
+  .image4 {
+    position: absolute;
+    top: 1312px;
+    right: 0px;
+    bottom: 656px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+  }
+  .image5 {
+    position: absolute;
+    bottom: 328px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+  }
+  .image6 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+  }
+  .flex_col2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 434px;
+    min-width: 0px;
+    @include md {
+      margin-top: unset;
+      margin-bottom: unset;
+      width: 100%;
+    }
+  }
+  .title21 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0px 15px 0px 0px;
+    font: 400 29px/1.2 "Georgia", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    @include md {
+      justify-content: center;
+      margin: 58px 15px 0px 0px;
+      text-align: center;
+      font-size: 29px;
+    }
+    @include tn {
+      font-size: 24px;
+    }
+  }
+  .highlight1 {
+    position: relative;
+    display: flex;
+    margin: 2px 0px 0px;
+    font: 400 18px/1.2 "Verdana", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    @include md {
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      padding: 5px 15px 5px 15px;
+      font-size: 18px;
+    }
+  }
+  .rect21 {
+    position: relative;
+    margin: 22px 0px 0px;
+    width: 273px;
+    min-height: 59px;
+    outline: 4px solid rgb(217, 217, 217);
+    outline-offset: -4px;
+    @include md {
+      margin: 22px auto 0px;
+    }
+  }
+  .title22 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 58px 15px 0px 0px;
+    font: 400 29px/1.2 "Georgia", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    @include md {
+      justify-content: center;
+      text-align: center;
+      font-size: 29px;
+    }
+    @include tn {
+      font-size: 24px;
+    }
+  }
+  .rect22 {
+    position: relative;
+    margin: 22px 0px 0px;
+    width: 273px;
+    min-height: 59px;
+    outline: 4px solid rgb(217, 217, 217);
+    outline-offset: -4px;
+    @include md {
+      margin: 22px auto 0px;
+    }
+    @include tn {
+      width: 40%;
+    }
+  }
+  .section3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 97px;
+    background-color: rgb(244, 244, 244);
+  }
+  .title23 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 31px auto;
+    font: 400 29px/1.2 "Georgia", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+}
