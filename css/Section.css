@@ -20,8 +20,8 @@
 }
 .section .title {
   position: relative;
-  margin: 236px 0px 202px 11.88%;
-  width: 449px;
+  margin: 236px auto 202px auto;
+  width: auto;
   font: 700 32px/1.12 "Georgia", Helvetica, Arial, serif;
   color: #eef2ef;
 }
@@ -47,6 +47,10 @@
 @media (max-width: 383px) {
   .section .flexColumn {
     margin: 50px auto;
+  }
+  .section .title {
+    word-wrap: normal;
+    text-align: center;
   }
 }
 .section .flexRow {
