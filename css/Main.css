@@ -1,3 +1,83 @@
+:root {
+  --bg-color: #EEF2EF;
+  --text-color: #212B31;
+  --intro-bg-color: #EEF2EF;
+  --author-text-color: #EEF2EF;
+  --caption-color: #3D4247;
+  --button-bg-color: #77d18d;
+  --button-text-color: #eef2ef;
+  --button-hover-bg-color: #5fe27fff;
+  --title-color: #212B31;
+  --footer-color: #212B31;
+  --footer-text-color: #EEF2EF;
+  --main-title: #EEF2EF;
+}
+
+.dark-theme {
+  --bg-color: #212B31;
+  --text-color: #EEF2EF;
+  --intro-bg-color: #212B31;
+  --author-text-color: #EEF2EF;
+  --caption-color: #EEF2EF;
+  --button-bg-color: #77d18d;
+  --button-text-color: #eef2ef;
+  --button-hover-bg-color: #5fe27fff;
+  --title-color: #EEF2EF;
+  --footer-text-color: #212B31;
+  --footer-color: #EEF2EF;
+  --main-title: #EEF2EF;
+}
+
+#logo-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  margin: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.25s;
+}
+
+
+#logo-button:hover {
+  transform: scale(1.1)
+}
+
+
+#logo-icon {
+  height: 40px;
+}
+#theme-switch {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  margin: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.25s;
+}
+
+#theme-switch:hover {
+  transform: scale(1.1)
+}
+
+#theme-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spacer {
+  height: 50px;
+}
+
 .reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
   text-decoration: none;
   color: inherit;
@@ -8,7 +88,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--bg-color);
+  transition: background-color 0.25s;
   overflow: hidden;
 }
 .main .introSection {
@@ -22,23 +103,23 @@
   display: flex;
   flex-direction: column;
   gap: 17px 0px;
-  margin: 319.5px auto 229.5px;
+  margin: 319.5px auto 279.5px;
   width: 981px;
   max-width: 85%;
 }
 @media (max-width: 991px) {
   .main .flexCol {
-    margin: 150px auto;
+    margin: 150px auto 200px;
   }
 }
 @media (max-width: 575px) {
   .main .flexCol {
-    margin: 80px auto;
+    margin: 80px auto 130px;
   }
 }
 @media (max-width: 383px) {
   .main .flexCol {
-    margin: 50px auto;
+    margin: 50px auto 100px;
   }
 }
 .main .introTitle {
@@ -46,8 +127,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font: 700 32px/1.4 "Georgia", Helvetica, Arial, serif;
-  color: white;
+  font: 700 32px/1.4 "Roboto", Helvetica, Arial, serif;
+  color: var(--main-title);
+  transition: color 0.25s;
   text-align: center;
 }
 @media (max-width: 991px) {
@@ -65,8 +147,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font: 400 28px/1.6 "Georgia", Helvetica, Arial, serif;
-  color: white;
+  font: 400 28px/1.6 "Roboto", Helvetica, Arial, serif;
+  color: var(--author-text-color);
+  transition: color 0.25s;
   text-align: center;
 }
 @media (max-width: 991px) {
@@ -109,8 +192,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font: 400 32px/1.12 "Georgia", Helvetica, Arial, serif;
-  color: black;
+  font: 400 32px/1.12 "Roboto", Helvetica, Arial, serif;
+  color: var(--title-color);
+  transition: color 0.25s;
   text-align: center;
 }
 @media (max-width: 991px) {
@@ -175,7 +259,8 @@
   display: flex;
   justify-content: center;
   font: 400 19px/1.21 "Verdana", Helvetica, Arial, serif;
-  color: #3d4247;
+  color: var(--caption-color);
+  transition: color 0.25s;
   text-align: center;
 }
 @media (max-width: 1199px) {
@@ -224,7 +309,8 @@
   display: flex;
   align-items: center;
   font: 400 29px/1.13 "Georgia", Helvetica, Arial, serif;
-  color: black;
+  color: var(--title-color);
+  transition: color 0.25s;
 }
 @media (max-width: 991px) {
   .main .childhoodTitle {
@@ -246,7 +332,9 @@
   position: relative;
   display: flex;
   font: 400 18px/1.22 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
+  transition: color 0.5s;
 }
 @media (max-width: 991px) {
   .main .childhoodHighlight {
@@ -278,7 +366,7 @@
   letter-spacing: 0.96px;
   transition-duration: 0.3s;
   transition-property: background-color;
-cursor: pointer;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .main .viewButton {
@@ -331,7 +419,8 @@ cursor: pointer;
   align-items: center;
   margin: 0px 0px 0px 15px;
   font: 400 29px/1.13 "Georgia", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
   text-align: right;
 }
 @media (max-width: 991px) {
@@ -362,7 +451,8 @@ cursor: pointer;
   justify-content: flex-end;
   margin: 3px 0px 0px;
   font: 400 18px/1.22 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
   text-align: right;
 }
 @media (max-width: 991px) {
@@ -395,6 +485,7 @@ cursor: pointer;
   letter-spacing: 0.96px;
   transition-duration: 0.3s;
   transition-property: background-color;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .main .viewButton1 {
@@ -438,7 +529,8 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   font: 400 19px/1.21 "Verdana", Helvetica, Arial, serif;
-  color: #3d4247;
+  color: var(--caption-color);
+  transition: color 0.25s;
   text-align: center;
 }
 @media (max-width: 1199px) {
@@ -515,7 +607,8 @@ cursor: pointer;
   align-items: center;
   margin: 0px 15px 0px 0px;
   font: 400 29px/1.13 "Georgia", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
 }
 @media (max-width: 991px) {
   .main .gymnasiumTitle {
@@ -544,7 +637,8 @@ cursor: pointer;
   display: flex;
   margin: 3px 0px 0px;
   font: 400 18px/1.22 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
 }
 @media (max-width: 991px) {
   .main .gymnasiumHighlight {
@@ -557,33 +651,6 @@ cursor: pointer;
     justify-content: center;
     text-align: center;
   }
-}
-.main .viewButton2 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 24px 0px 0px;
-  width: 273px;
-  max-width: 100%;
-  font: 700 32px/1.12 "Georgia", Helvetica, Arial, serif;
-  color: #eef2ef;
-  text-align: center;
-  background-color: #77d18d;
-  border-radius: 20px 20px 20px 20px;
-  padding: 11.5px 8px 11.5px 8px;
-  filter: drop-shadow(0px 8px 24px rgba(134, 234, 158, 0.247));
-  letter-spacing: 0.96px;
-  transition-duration: 0.3s;
-  transition-property: background-color;
-}
-@media (max-width: 767px) {
-  .main .viewButton2 {
-    margin: 24px auto 0px;
-  }
-}
-.main .viewButton2:hover {
-  background-color: #5fe27fff;
 }
 .main .flexColText3 {
   position: relative;
@@ -613,7 +680,8 @@ cursor: pointer;
   align-items: center;
   margin: 0px 0px 0px 15px;
   font: 400 29px/1.13 "Georgia", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
   text-align: right;
 }
 @media (max-width: 991px) {
@@ -644,7 +712,8 @@ cursor: pointer;
   justify-content: flex-end;
   margin: 3px 0px 0px;
   font: 400 18px/1.22 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
   text-align: right;
 }
 @media (max-width: 991px) {
@@ -665,7 +734,8 @@ cursor: pointer;
   align-items: center;
   margin: 0px 15px 0px 0px;
   font: 400 29px/1.13 "Georgia", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
 }
 @media (max-width: 991px) {
   .main .abandonedStudiesTitle {
@@ -694,7 +764,8 @@ cursor: pointer;
   display: flex;
   margin: 3px 0px 0px;
   font: 400 18px/1.22 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
 }
 @media (max-width: 991px) {
   .main .abandonedStudiesHighlight {
@@ -730,7 +801,8 @@ cursor: pointer;
   align-items: center;
   margin: 0px 0px 0px 15px;
   font: 400 29px/1.13 "Georgia", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
   text-align: right;
 }
 @media (max-width: 991px) {
@@ -761,7 +833,8 @@ cursor: pointer;
   justify-content: flex-end;
   margin: 3px 0px 0px;
   font: 400 18px/1.22 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
   text-align: right;
 }
 @media (max-width: 991px) {
@@ -776,40 +849,14 @@ cursor: pointer;
     text-align: center;
   }
 }
-.main .viewButton3 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 22px 0px 0px auto;
-  width: 273px;
-  max-width: 100%;
-  font: 700 32px/1.12 "Georgia", Helvetica, Arial, serif;
-  color: #eef2ef;
-  text-align: center;
-  background-color: #77d18d;
-  border-radius: 20px 20px 20px 20px;
-  padding: 11.5px 8px 11.5px 8px;
-  filter: drop-shadow(0px 8px 24px rgba(134, 234, 158, 0.247));
-  letter-spacing: 0.96px;
-  transition-duration: 0.3s;
-  transition-property: background-color;
-}
-@media (max-width: 767px) {
-  .main .viewButton3 {
-    margin: 22px auto 0px;
-  }
-}
-.main .viewButton3:hover {
-  background-color: #5fe27fff;
-}
 .main .csStudiesTitle {
   position: relative;
   display: flex;
   align-items: center;
   margin: 0px 15px 0px 0px;
   font: 400 29px/1.13 "Georgia", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
 }
 @media (max-width: 991px) {
   .main .csStudiesTitle {
@@ -838,7 +885,8 @@ cursor: pointer;
   display: flex;
   margin: 3px 0px 0px;
   font: 400 18px/1.22 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
+  transition: color 0.25s;
 }
 @media (max-width: 991px) {
   .main .csStudiesHighlight {
@@ -857,7 +905,8 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   min-height: 97px;
-  background-color: #3d4247;
+  background-color: var(--footer-color);
+  transition: background-color 0.25s;
 }
 .main .futurePlansTitle {
   position: relative;
@@ -868,7 +917,8 @@ cursor: pointer;
   width: 66.59375px;
   max-width: 85%;
   font: 400 29px/1.13 "Georgia", Helvetica, Arial, serif;
-  color: #eef2ef;
+  color: var(--footer-text-color);
+  transition: color 0.25s;
   text-align: center;
 }
 @media (max-width: 991px) {

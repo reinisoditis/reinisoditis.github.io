@@ -1,3 +1,68 @@
+:root {
+  --main-title-color: #EEF2EF;
+  --bg-color: #EEF2EF;
+  --text-color: #212B31;
+  --footer-bg-color: #212B31;
+  --footer-text-color: #EEF2EF;
+  --caption-text-color: #3D4247;
+}
+
+.dark-theme {
+
+  --main-title-color: #EEF2EF;
+  --bg-color: #212B31;
+  --text-color: #EEF2EF;
+  --footer-bg-color: #EEF2EF;
+  --footer-text-color: #212B31;
+  --caption-text-color: #EEF2EF;
+}
+
+#logo-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  margin: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.25s;
+}
+
+
+#logo-button:hover {
+  transform: scale(1.1)
+}
+
+
+#logo-icon {
+  height: 40px;
+}
+#theme-switch {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  margin: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.25s;
+}
+
+#theme-switch:hover {
+  transform: scale(1.1)
+}
+
+#theme-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
   text-decoration: none;
   color: inherit;
@@ -8,7 +73,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--bg-color);
   overflow: hidden;
 }
 .section .section1 {
@@ -20,16 +85,16 @@
 }
 .section .title {
   position: relative;
-  margin: 236px auto 202px auto;
+  margin: 216px auto 252px auto;
   width: auto;
   font: 700 32px/1.12 "Georgia", Helvetica, Arial, serif;
-  color: #eef2ef;
+  color: var(--main-title-color);
 }
 .section .introductionSection {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #eef2ef;
+  background-color: var(--bg-color);
 }
 .section .flexColumn {
   position: relative;
@@ -51,6 +116,7 @@
   .section .title {
     word-wrap: normal;
     text-align: center;
+    margin: 116px auto 152px auto;
   }
 }
 .section .flexRow {
@@ -99,7 +165,7 @@
   display: flex;
   justify-content: center;
   font: 400 19px/1.21 "Verdana", Helvetica, Arial, serif;
-  color: #3d4247;
+  color: var(--caption-text-color);
   text-align: center;
 }
 @media (max-width: 991px) {
@@ -133,7 +199,7 @@
 .section .mainTitle {
   position: relative;
   font: 400 28px/1.14 "Georgia", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
 }
 @media (max-width: 1199px) {
   .section .mainTitle {
@@ -155,7 +221,7 @@
 .section .mainSubtitle {
   position: relative;
   font: 400 21px/1.23 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
 }
 @media (max-width: 1199px) {
   .section .mainSubtitle {
@@ -178,7 +244,7 @@
   position: relative;
   margin: 40px 2px 0px 0px;
   font: 400 19px/1.21 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
 }
 @media (max-width: 991px) {
   .section .highlightText {
@@ -195,7 +261,7 @@
   position: relative;
   margin: 23px 2px 0px 0px;
   font: 400 19px/1.21 "Verdana", Helvetica, Arial, serif;
-  color: black;
+  color: var(--text-color);
 }
 @media (max-width: 991px) {
   .section .additionalHighlight {
@@ -241,7 +307,7 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   min-height: 97px;
-  background-color: #3d4247;
+  background-color: var(--footer-bg-color);
 }
 .section .title2 {
   position: relative;
@@ -250,6 +316,6 @@ cursor: pointer;
   align-items: center;
   margin: 32px auto;
   font: 400 29px/1.13 "Georgia", Helvetica, Arial, serif;
-  color: #eef2ef;
+  color: var(--footer-text-color);
   text-align: center;
 }
