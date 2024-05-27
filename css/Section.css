@@ -108,6 +108,11 @@
   .section .flexColumn {
     margin: 80px auto;
   }
+  .section .title {
+    word-wrap: normal;
+    text-align: center;
+    margin: 116px auto 152px auto;
+  }
 }
 @media (max-width: 383px) {
   .section .flexColumn {
