@@ -18,10 +18,10 @@
   --text-color: #EEF2EF;
   --intro-bg-color: #212B31;
   --author-text-color: #EEF2EF;
-  --caption-color: #EEF2EF;
-  --button-bg-color: #77d18d;
+  --caption-color: #D6D0D0;
+  --button-bg-color: #58BB70;
   --button-text-color: #eef2ef;
-  --button-hover-bg-color: #5fe27fff;
+  --button-hover-bg-color: #37D85E;
   --title-color: #EEF2EF;
   --footer-text-color: #212B31;
   --footer-color: #EEF2EF;
@@ -359,7 +359,7 @@
   font: 700 32px/1.12 "Georgia", Helvetica, Arial, serif;
   color: #eef2ef;
   text-align: center;
-  background-color: #77d18d;
+  background-color: var(--button-bg-color);
   border-radius: 20px 20px 20px 20px;
   padding: 11.5px 8px 11.5px 8px;
   filter: drop-shadow(0px 8px 24px rgba(134, 234, 158, 0.247));
@@ -374,7 +374,7 @@
   }
 }
 .main .viewButton:hover {
-  background-color: #5fe27fff;
+  background-color: var(--button-hover-bg-color);
 }
 .main .flexRowSecondary {
   position: relative;
@@ -478,7 +478,7 @@
   font: 700 32px/1.12 "Georgia", Helvetica, Arial, serif;
   color: #eef2ef;
   text-align: center;
-  background-color: #77d18d;
+  background-color: var(--button-bg-color);
   border-radius: 20px 20px 20px 20px;
   padding: 11.5px 8px 11.5px 8px;
   filter: drop-shadow(0px 8px 24px rgba(134, 234, 158, 0.247));
@@ -493,7 +493,7 @@
   }
 }
 .main .viewButton1:hover {
-  background-color: #5fe27fff;
+  background-color: var(--button-hover-bg-color);
 }
 .main .flexColImage1 {
   position: relative;
